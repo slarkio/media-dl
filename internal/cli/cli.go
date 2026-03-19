@@ -43,13 +43,15 @@ var VerboseFlag = &cli.BoolFlag{
 }
 
 var AudioOnlyFlag = &cli.BoolFlag{
-	Name:  "audio-only",
-	Usage: "Download audio only, skip shownotes",
+	Name:    "audio-only",
+	Aliases: []string{"a"},
+	Usage:   "Download audio only, skip shownotes",
 }
 
 var ShownotesOnlyFlag = &cli.BoolFlag{
-	Name:  "shownotes-only",
-	Usage: "Download shownotes only, skip audio",
+	Name:    "shownotes-only",
+	Aliases: []string{"s"},
+	Usage:   "Download shownotes only, skip audio",
 }
 
 func DownloadCommand(ctx context.Context, cmd *cli.Command) error {

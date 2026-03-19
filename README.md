@@ -53,8 +53,8 @@ media-dl <url> -o ./out         # 指定输出目录
 media-dl <url> -c ./cookies.txt  # 带 Cookie（VIP 内容）
 media-dl <url> --json           # JSON 输出
 media-dl <url> -v               # 调试模式
-media-dl <url> --audio-only     # 仅下载音频
-media-dl <url> --shownotes-only # 仅下载 shownotes
+media-dl <url> -a               # 仅下载音频
+media-dl <url> -s               # 仅下载 shownotes
 ```
 
 ## 命令行选项
@@ -65,8 +65,8 @@ media-dl <url> --shownotes-only # 仅下载 shownotes
 | `-c, --cookie` | Cookie 文件路径 | 无 |
 | `-j, --json` | JSON 格式输出 | false |
 | `-v, --verbose` | 调试信息 | false |
-| `--audio-only` | 仅下载音频，跳过 shownotes | false |
-| `--shownotes-only` | 仅下载 shownotes，跳过音频 | false |
+| `-a, --audio-only` | 仅下载音频，跳过 shownotes | false |
+| `-s, --shownotes-only` | 仅下载 shownotes，跳过音频 | false |
 
 ## 输出文件
 
